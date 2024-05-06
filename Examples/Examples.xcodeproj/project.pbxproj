@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F1FEE682BE855AF00328A0D /* WorkspaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FEE672BE855AF00328A0D /* WorkspaceView.swift */; };
+		1F1FEE6A2BE85D1300328A0D /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FEE692BE85D1300328A0D /* BarChartView.swift */; };
 		1FDFC1B22BE8228B00689B74 /* ExamplesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDFC1B12BE8228B00689B74 /* ExamplesApp.swift */; };
 		1FDFC1B42BE8228B00689B74 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDFC1B32BE8228B00689B74 /* ContentView.swift */; };
 		1FDFC1B62BE8228C00689B74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FDFC1B52BE8228C00689B74 /* Assets.xcassets */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F1FEE672BE855AF00328A0D /* WorkspaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkspaceView.swift; sourceTree = "<group>"; };
+		1F1FEE692BE85D1300328A0D /* BarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
 		1FDFC1AE2BE8228B00689B74 /* Examples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Examples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FDFC1B12BE8228B00689B74 /* ExamplesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplesApp.swift; sourceTree = "<group>"; };
 		1FDFC1B32BE8228B00689B74 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,7 +58,9 @@
 		1FDFC1B02BE8228B00689B74 /* Examples */ = {
 			isa = PBXGroup;
 			children = (
+				1F1FEE692BE85D1300328A0D /* BarChartView.swift */,
 				1FDFC1C02BE822E100689B74 /* PieChartView.swift */,
+				1F1FEE672BE855AF00328A0D /* WorkspaceView.swift */,
 				1FDFC1B12BE8228B00689B74 /* ExamplesApp.swift */,
 				1FDFC1B32BE8228B00689B74 /* ContentView.swift */,
 				1FDFC1B52BE8228C00689B74 /* Assets.xcassets */,
@@ -142,7 +148,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F1FEE682BE855AF00328A0D /* WorkspaceView.swift in Sources */,
 				1FDFC1C12BE822E100689B74 /* PieChartView.swift in Sources */,
+				1F1FEE6A2BE85D1300328A0D /* BarChartView.swift in Sources */,
 				1FDFC1B42BE8228B00689B74 /* ContentView.swift in Sources */,
 				1FDFC1B22BE8228B00689B74 /* ExamplesApp.swift in Sources */,
 			);

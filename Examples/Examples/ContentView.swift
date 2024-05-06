@@ -1,9 +1,4 @@
-//
-//  ContentView.swift
-//  Examples
-//
-//  Created by Travis Luckenbaugh on 5/5/24.
-//
+//  Examples/ContentView.swift
 
 import SwiftUI
 

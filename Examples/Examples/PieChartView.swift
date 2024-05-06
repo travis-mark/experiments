@@ -1,18 +1,21 @@
+// Examples/PieChartView.swift
 // Source: https://useyourloaf.com/blog/swiftui-pie-charts/
+
 import Charts
 import SwiftUI
 
 struct PostCount {
+    var id: Int
     var category: String
     var count: Int
 }
 
 let byCategory: [PostCount] = [
-    .init(category: "Xcode", count: 79),
-    .init(category: "Swift", count: 73),
-    .init(category: "SwiftUI", count: 58),
-    .init(category: "WWDC", count: 15),
-    .init(category: "SwiftData", count: 9)
+    .init(id: 1, category: "Xcode", count: 79),
+    .init(id: 2, category: "Swift", count: 73),
+    .init(id: 3, category: "SwiftUI", count: 58),
+    .init(id: 4, category: "WWDC", count: 15),
+    .init(id: 5, category: "SwiftData", count: 9)
 ]
 
 struct PieChartView: View {
@@ -21,28 +24,28 @@ struct PieChartView: View {
     
     private let categoryRanges: [(category: String, range: Range<Double>)]
     private let totalPosts: Int
-
+    
     init(data: [PostCount]) {
-      self.data = data
-      var total = 0
-      categoryRanges = data.map {
-        let newTotal = total + $0.count
-        let result = (category: $0.category,
-                      range: Double(total) ..< Double(newTotal))
-        total = newTotal
-        return result
-      }
-      self.totalPosts = total
+        self.data = data
+        var total = 0
+        categoryRanges = data.map {
+            let newTotal = total + $0.count
+            let result = (category: $0.category,
+                          range: Double(total) ..< Double(newTotal))
+            total = newTotal
+            return result
+        }
+        self.totalPosts = total
     }
     
     var selectedItem: PostCount? {
-      guard let selectedAngle else { return nil }
-      if let selected = categoryRanges.firstIndex(where: {
-        $0.range.contains(selectedAngle)
-      }) {
-        return data[selected]
-      }
-      return nil
+        guard let selectedAngle else { return nil }
+        if let selected = categoryRanges.firstIndex(where: {
+            $0.range.contains(selectedAngle)
+        }) {
+            return data[selected]
+        }
+        return nil
     }
     
     var body: some View {
@@ -59,24 +62,22 @@ struct PieChartView: View {
             }
             .chartAngleSelection(value: $selectedAngle)
             .chartBackground { chartProxy in
-              GeometryReader { geometry in
-                if let anchor = chartProxy.plotFrame {
-                  let frame = geometry[anchor]
-                    VStack {
-                        Text(selectedItem?.category ?? "Categories")
-                          .font(.title)
-                        Text((selectedItem?.count.formatted() ?? totalPosts.formatted()) + " posts")
-                          .font(.callout)
-                      }
-                    .position(x: frame.midX, y: frame.midY)
+                GeometryReader { geometry in
+                    if let anchor = chartProxy.plotFrame {
+                        let frame = geometry[anchor]
+                        VStack {
+                            Text(selectedItem?.category ?? "Categories")
+                                .font(.title)
+                            Text((selectedItem?.count.formatted() ?? totalPosts.formatted()) + " posts")
+                                .font(.callout)
+                        }
+                        .position(x: frame.midX, y: frame.midY)
+                    }
                 }
-              }
             }
             .chartLegend(alignment: .center, spacing: 16)
             .scaledToFit()
-            
         }
-        
     }
 }
 
