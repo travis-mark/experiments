@@ -14,6 +14,8 @@
 		1FDFC1B62BE8228C00689B74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FDFC1B52BE8228C00689B74 /* Assets.xcassets */; };
 		1FDFC1BA2BE8228C00689B74 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FDFC1B92BE8228C00689B74 /* Preview Assets.xcassets */; };
 		1FDFC1C12BE822E100689B74 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDFC1C02BE822E100689B74 /* PieChartView.swift */; };
+		1FF4B7CC2BEAFA4B002D657E /* PostCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF4B7CB2BEAFA4B002D657E /* PostCount.swift */; };
+		1FF4B7CE2BEAFDFC002D657E /* LineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF4B7CD2BEAFDFC002D657E /* LineChartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		1FDFC1B72BE8228C00689B74 /* Examples.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Examples.entitlements; sourceTree = "<group>"; };
 		1FDFC1B92BE8228C00689B74 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1FDFC1C02BE822E100689B74 /* PieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
+		1FF4B7CB2BEAFA4B002D657E /* PostCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCount.swift; sourceTree = "<group>"; };
+		1FF4B7CD2BEAFDFC002D657E /* LineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +63,9 @@
 			isa = PBXGroup;
 			children = (
 				1F1FEE692BE85D1300328A0D /* BarChartView.swift */,
+				1FF4B7CD2BEAFDFC002D657E /* LineChartView.swift */,
 				1FDFC1C02BE822E100689B74 /* PieChartView.swift */,
+				1FF4B7CB2BEAFA4B002D657E /* PostCount.swift */,
 				1F1FEE672BE855AF00328A0D /* WorkspaceView.swift */,
 				1FDFC1B12BE8228B00689B74 /* ExamplesApp.swift */,
 				1FDFC1B32BE8228B00689B74 /* ContentView.swift */,
@@ -151,6 +157,8 @@
 				1F1FEE682BE855AF00328A0D /* WorkspaceView.swift in Sources */,
 				1FDFC1C12BE822E100689B74 /* PieChartView.swift in Sources */,
 				1F1FEE6A2BE85D1300328A0D /* BarChartView.swift in Sources */,
+				1FF4B7CE2BEAFDFC002D657E /* LineChartView.swift in Sources */,
+				1FF4B7CC2BEAFA4B002D657E /* PostCount.swift in Sources */,
 				1FDFC1B42BE8228B00689B74 /* ContentView.swift in Sources */,
 				1FDFC1B22BE8228B00689B74 /* ExamplesApp.swift in Sources */,
 			);
